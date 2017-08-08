@@ -1,0 +1,111 @@
+
+.Card-container {
+  float: left;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+@media (max-width: 480px) {
+  .Card-container {
+    width: 100%;
+    margin: 20px;
+  }
+}
+
+.Container {
+  padding: 0px;
+}
+
+.Container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.Card {
+  background: #FFFFFF;
+  border: 1px solid #EFEFEF;
+  border-radius: 8px;
+  width: 235px;
+  min-width: 235px;
+  height: 250px;
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.Card-button {
+  color: #0099ff;
+  border: 1px solid #0099ff;
+  background: #FFFFFF;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 30px;
+  transition: all 0.3s;
+}
+
+.Card-button:hover {
+  color: #FFFFFF;
+  border: 1px solid #0099ff;
+  background: #0099ff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.Card-footer {
+  background: #EFEFEF;
+  padding: 10px;
+  border-radius: 0px 0px 8px 8px;
+  position: relative;
+  bottom: -5px;
+}
+
+.Card-sub-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Item-name {
+  text-align: left;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+.Item-price {
+  text-align: left;
+  margin-left: 12px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.Card-logo {
+  position: relative;
+  top: 0px;
+  height: 140px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.Discount-strip {
+  background: #70C35D;
+  color: #FFFFFF;
+  align-items: center;
+  align-self: center;
+  max-width: 50px;
+  font-size: 10px;
+  position: relative;
+  top: 40px;
+  padding: 6px;
+} 
+
+.Null-discount-strip {
+  background: transparent;
+  color: #FFFFFF;
+  align-items: center;
+  align-self: center;
+  max-width: 50px;
+  font-size: 10px;
+  position: relative;
+  top: 40px;
+  padding: 6px;
+}

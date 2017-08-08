@@ -1,0 +1,81 @@
+
+.Checkout-Card-container {
+  float: left;
+  justify-content: space-around;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 480px) {
+  .Checkout-Card-container {
+    width: 100%;
+    margin: 20px;
+  }
+}
+
+.Container {
+  padding: 0px;
+}
+
+.Container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.Item-logo {
+  width: 30px;
+  height: 40px;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+.Item-name {
+  font-size: 12px;
+  padding: 12px;
+  color: #AAAAAA;
+}
+
+.Item-box {
+  border: 1px solid #EFEFEF;
+  padding: 2px;
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+  width: 40%;
+}
+
+.Item-box:hover {
+  border: 1px solid #EFEFEF;
+  padding: 2px;
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+  background: #F4F4F5;
+}
+
+.Item-qty-box {
+  display: flex;
+  font-size: 12px;
+  font-weight: 600;
+  height: 40px;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.Item-price {
+  font-size: 14px;
+}
+
+.Item-qty-name {
+  border: 1px solid #EFEFEF;
+  width: 10%;
+  padding: 10px;
+}
+
+.Item-qty-symbol {
+  padding: 10px;
+  font-size: 18px;
+  color: #CCCCCC;
+}
