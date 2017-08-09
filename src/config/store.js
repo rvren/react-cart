@@ -6,7 +6,6 @@ import {
 import thunkMiddleware from 'redux-thunk';
 import { autoRehydrate } from 'redux-persist';
 import { createLogger } from 'redux-logger';
-import localForage from 'localforage'
 
 
 import rootReducer from '../reducers/';
@@ -15,7 +14,7 @@ let middleware = [thunkMiddleware];
 
 // Reducer whiletlisting 
 export const persistConfig = {
-    storage: localForage,
+    storage: localStorage,
     whitelist: ['checkoutCart']
 }
 
